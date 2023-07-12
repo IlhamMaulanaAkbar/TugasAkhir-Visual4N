@@ -51,6 +51,9 @@ type
     e14: TEdit;
     cbb1: TComboBox;
     cbb2: TComboBox;
+    BitBtn1: TBitBtn;
+    frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
   private
     { Private declarations }
   public

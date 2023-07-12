@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 163
-  Top = 127
+  Left = 237
+  Top = 160
   Width = 1048
   Height = 537
   Caption = 'Data Siswa'
@@ -292,6 +292,14 @@ object Form1: TForm1
     ItemHeight = 13
     TabOrder = 21
   end
+  object BitBtn1: TBitBtn
+    Left = 632
+    Top = 224
+    Width = 75
+    Height = 33
+    Caption = 'CETAK'
+    TabOrder = 22
+  end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
@@ -321,5 +329,32 @@ object Form1: TForm1
     DataSet = ZQuery1
     Left = 168
     Top = 336
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    Left = 288
+    Top = 336
+  end
+  object frxReport1: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45119.884820659720000000
+    ReportOptions.LastChange = 45119.884820659720000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 216
+    Top = 336
+    Datasets = <>
+    Variables = <>
+    Style = <>
   end
 end
